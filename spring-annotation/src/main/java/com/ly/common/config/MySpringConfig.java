@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 public class MySpringConfig {
 
 
-    @Bean(name = {"user001", "user002"})
+    @Bean(name = {"user001", "user002"}, initMethod = "init", destroyMethod = "destory")
     public User getUser() {
         return new User();
     }
