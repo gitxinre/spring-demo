@@ -10,7 +10,7 @@ import redis.clients.jedis.JedisPool;
  * @date 2018/12/5 11:31
  */
 @Configuration
-@ComponentScan(basePackages = {"com.ly.cache"})
+@ComponentScan(basePackages = {"com.ly.cache","com.ly.service"})
 public class MySpringConfigJedis {
 
     @Bean(name = "jedisPool")
